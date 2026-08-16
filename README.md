@@ -43,22 +43,28 @@ sidebar gets an **…** overflow menu entry per configured target
 ## Install
 
 Add the plugin to your web profile (runs pnpm inside the profile and
-reconciles the bundle layer):
+reconciles the bundle layer). From the npm registry:
 
 ```sh
-dsh plugin --profile web add github:nevermindzzt/dsh-open-in
+dsh plugin --profile web add dsh-open-in
+```
+
+Or directly from GitHub:
+
+```sh
+dsh plugin --profile web add github:NevermindZZT/dsh-open-in
 ```
 
 Or pin a release tag:
 
 ```sh
-dsh plugin --profile web add https://github.com/nevermindzzt/dsh-open-in/archive/refs/tags/v0.1.0.tar.gz
+dsh plugin --profile web add https://github.com/NevermindZZT/dsh-open-in/archive/refs/tags/v0.1.0.tar.gz
 ```
 
-The repository ships the prebuilt `lib/`, so git/tarball installs need no
-build step and no build approval. Restart the web server, then refresh the
-page. The host plugin mounts as `dsh-open-in`; the client bundle is served
-at `/plugins/dsh-open-in/client.js`.
+All paths ship the prebuilt `lib/`, so git/tarball installs need no build
+step and no build approval. Restart the web server, then refresh the page.
+The host plugin mounts as `dsh-open-in`; the client bundle is served at
+`/plugins/dsh-open-in/client.js`.
 
 Verify the layer composed:
 

@@ -37,19 +37,26 @@ VS Code、文件管理器、Windows Terminal，或任何你配置的命令行工
 
 ## 安装
 
-把插件加入你的 web profile（会在 profile 内执行 pnpm 并合并 bundle 层）：
+把插件加入你的 web profile（会在 profile 内执行 pnpm 并合并 bundle 层）。
+从 npm registry 安装：
 
 ```sh
-dsh plugin --profile web add github:nevermindzzt/dsh-open-in
+dsh plugin --profile web add dsh-open-in
+```
+
+或直接从 GitHub 安装：
+
+```sh
+dsh plugin --profile web add github:NevermindZZT/dsh-open-in
 ```
 
 或固定到某个发布 tag：
 
 ```sh
-dsh plugin --profile web add https://github.com/nevermindzzt/dsh-open-in/archive/refs/tags/v0.1.0.tar.gz
+dsh plugin --profile web add https://github.com/NevermindZZT/dsh-open-in/archive/refs/tags/v0.1.0.tar.gz
 ```
 
-仓库自带预构建的 `lib/`，git / tarball 安装无需构建步骤，也无需构建授权。
+三种方式都自带预构建的 `lib/`，git / tarball 安装无需构建步骤，也无需构建授权。
 重启 Web 服务器，然后刷新页面。主机插件挂载在 `dsh-open-in`；
 客户端 bundle 由 `/plugins/dsh-open-in/client.js` 提供。
 
