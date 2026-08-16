@@ -1,0 +1,13 @@
+# dependencies and machine-local stores
+node_modules/
+.pnpm-store/
+
+# publish artifacts (committed lib/ ships prebuilt; tarballs are transient)
+*.tgz
+
+# machine-specific dev scripts and local research notes
+调研与方案评估.md
+verify-settings.mjs
+smoke.mjs
+
+.DS_Store
