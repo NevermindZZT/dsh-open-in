@@ -1,6 +1,6 @@
 # dsh-open-in
 
-![version](https://badgen.net/badge/version/0.1.0/green)
+![version](https://badgen.net/badge/version/0.1.1/green)
 ![license](https://badgen.net/badge/license/MIT/blue)
 [![GitHub](https://badgen.net/badge/github/nevermindzzt%2Fdsh-open-in/black)](https://github.com/nevermindzzt/dsh-open-in)
 
@@ -58,7 +58,7 @@ dsh plugin --profile web add github:NevermindZZT/dsh-open-in
 Or pin a release tag:
 
 ```sh
-dsh plugin --profile web add https://github.com/NevermindZZT/dsh-open-in/archive/refs/tags/v0.1.0.tar.gz
+dsh plugin --profile web add https://github.com/NevermindZZT/dsh-open-in/archive/refs/tags/v0.1.1.tar.gz
 ```
 
 All paths ship the prebuilt `lib/`, so git/tarball installs need no build

@@ -1,6 +1,6 @@
 {
   "id": "dsh-open-in",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/index.js",
   "description": "Open a workspace directory in a configurable launcher (VS Code / file explorer / Windows Terminal) from the web GUI.",
   "engines": {

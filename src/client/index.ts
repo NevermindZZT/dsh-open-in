@@ -155,8 +155,7 @@ export function apply(ctx: ClientContext): void {
     console.info('[dsh-open-in] registering Settings card into settings.plugin.item')
     return ctx.slots.register({
       name: 'settings.plugin.item',
-      id: 'dsh-open-in',
-      order: 100,
+      key: 'dsh-open-in',
       locale: NS,
       inject: cardFace,
     }, TargetsSettingsCard)
